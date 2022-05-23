@@ -4,9 +4,9 @@ import App from "./App";
 const RouteSwitch = () => {
     return (
         <BrowserRouter>
-        <Routes>
-            
-        </Routes>
+            <Routes>
+                <Route path="/" element={<App></App>}></Route>
+            </Routes>
         </BrowserRouter>
     )
 }
