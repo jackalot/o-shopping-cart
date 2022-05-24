@@ -10,8 +10,9 @@
 li {
     list-style-type: none;
     margin: auto;
-    background-color: green;
+    background-color: #FD7F20;
     border: 10px;
     border-style: solid;
+    border-color: #FC2E20;
     font-size: large;
 }
