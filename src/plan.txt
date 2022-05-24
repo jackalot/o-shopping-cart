@@ -1,0 +1,1 @@
+focus: style the elements that will be going on our shop page before programming anything:
