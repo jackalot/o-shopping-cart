@@ -1,5 +1,6 @@
 .CartNotification-Container {
-    width: fit-content;
+    width: 10%;
+    
 }
 .CartNotification-Amount {
     background-color: #FC2E20;
@@ -8,4 +9,5 @@
     border-style: solid;
     border-radius: 20px;
     border-width: 10px;
+   
 }
