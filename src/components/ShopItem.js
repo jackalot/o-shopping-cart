@@ -1,8 +1,8 @@
 import React from "react";
 function ShopItem (props) {
-    return <div>
+    return <div className="ShopItem-Container">
         {props.itemName}
-        <div>
+        <div className="ShopItem-Price">
         {props.itemPrice}
         </div>
     </div>
