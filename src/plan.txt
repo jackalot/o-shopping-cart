@@ -1,1 +1,13 @@
 focus: style the elements that will be going on our shop page before programming anything:
+Color palette:
+Orange
+#FD7F20
+
+Red Orange
+#FC2E20
+
+Amber
+#FDB750
+
+Black
+#010100
