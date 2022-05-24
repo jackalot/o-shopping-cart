@@ -1,5 +1,5 @@
 .NavBar-Container {
-    /* fill this with color when we have a color pallate */
+   background-color: #FDB750;
 }
 .NavBar-Ul {
     display: flex;
