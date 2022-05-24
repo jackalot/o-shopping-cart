@@ -2,3 +2,7 @@
     background-color: #FD7F20;
     width: fit-content;
 }
+.CartNotification-Amount {
+    background-color: #FC2E20;
+    font-size: 30px;
+}
