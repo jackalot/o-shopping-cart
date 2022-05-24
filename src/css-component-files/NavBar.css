@@ -1,0 +1,12 @@
+.NavBar-Container {
+    /* fill this with color when we have a color pallate */
+}
+.NavBar-Ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+li {
+    list-style-type: none;
+}
