@@ -9,5 +9,7 @@
     border-style: solid;
     border-radius: 20px;
     border-width: 10px;
-   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
