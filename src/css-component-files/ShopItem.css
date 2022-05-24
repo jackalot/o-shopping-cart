@@ -1,4 +1,7 @@
 .ShopItem-Container {
     background-color: #FDB750;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
