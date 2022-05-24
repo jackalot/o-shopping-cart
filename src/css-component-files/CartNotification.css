@@ -1,8 +1,11 @@
 .CartNotification-Container {
-    background-color: #FD7F20;
     width: fit-content;
 }
 .CartNotification-Amount {
     background-color: #FC2E20;
     font-size: 30px;
+    border-color: #FD7F20;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
 }
