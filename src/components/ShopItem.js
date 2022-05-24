@@ -1,4 +1,5 @@
 import React from "react";
+import '../css-component-files/ShopItem.css'
 function ShopItem (props) {
     return <div className="ShopItem-Container">
         {props.itemName}
