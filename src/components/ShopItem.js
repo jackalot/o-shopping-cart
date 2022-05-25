@@ -8,6 +8,9 @@ function ShopItem (props) {
         <div className="ShopItem-Price">
         {props.itemPrice}
         </div>
+        <label for={props.itemName + "quantity"}>Quantity</label>
+        <input name={props.itemName + "quantity"} type="number"></input>
+       
     </div>
 }
 export default ShopItem;
