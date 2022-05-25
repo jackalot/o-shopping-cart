@@ -1,9 +1,13 @@
 .Cart-cartItem {
     list-style: none;
-
+    
 }
 .Cart-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #FDB750;
+    border-color: #010100;
+    border-style: solid;
+    width: fit-content;
 }
