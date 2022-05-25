@@ -4,8 +4,8 @@ import "../css-component-files/NavBar.css"
 function NavBar () {
  return <div className="NavBar-Container"> 
      <ul className="NavBar-Ul">
-        <li><Link to={"/"}>Home</Link></li>
-        <li><Link to={"/shop"}>shop</Link></li>
+        <li className="NavBar-Link"><Link to={"/"}>Home</Link></li>
+        <li className="NavBar-Link"><Link to={"/shop"}>shop</Link></li>
      </ul>
  </div>
 }
