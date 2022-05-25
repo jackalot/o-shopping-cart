@@ -8,7 +8,9 @@ function Cart (props) {
             <li className="Cart-cartItem">Nachos, Price Per: 5.00, Quantity Selected: 10 Total: $50.00</li>
             <li className="Cart-cartItem">Burrito, Price Per: 3.00, Quantity Selected: 2 Total: $6.00</li>
         </ul>
-        <p>TOTAL PRICE: $106.00</p>
+        <div className="Cart-TotalPrice">        
+            <p>TOTAL PRICE: $106.00</p>
+        </div>
         <button className="Checkout">Checkout</button>
     </div>
 }
