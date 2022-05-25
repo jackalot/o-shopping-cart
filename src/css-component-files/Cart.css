@@ -1,6 +1,8 @@
 .Cart-cartItem {
     list-style: none;
-    
+    background-color: #FD7F20;
+    border-color: #FC2E20;
+    border-style: dashed;
 }
 .Cart-container {
     display: flex;
