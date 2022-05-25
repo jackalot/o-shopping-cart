@@ -13,3 +13,9 @@
     border-style: solid;
     width: fit-content;
 }
+.Cart-TotalPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
