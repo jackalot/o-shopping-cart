@@ -10,7 +10,7 @@ function ShopItem (props) {
         </div>
         <label for={props.itemName + "quantity"}>Quantity</label>
         <input name={props.itemName + "quantity"} type="number"></input>
-       
+        <button onClick={props.handler}></button>
     </div>
 }
 export default ShopItem;
