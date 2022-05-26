@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import '../css-component-files/ShopItem.css'
 function ShopItem (props) {
     const [quantity, setQuantity] = useState(0);
-    
+    function changeQuantity() {
+        
+    }
     return <div className="ShopItem-Container">
         <div className="ShopItem-ItemName">
        {props.itemName}
