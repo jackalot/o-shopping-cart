@@ -5,8 +5,12 @@ import { render } from "@testing-library/react";
 import ShopItem from "../components/ShopItem";
 
 describe("ShopItem component", () => {
-    it("renders correct div", ()=> {
+    it("renders the Add To Cart button", ()=> {
         const { getByRole } = render(<ShopItem></ShopItem>);
-        expect(getByRole("div").textContent).toMatch("Price");
+        expect(getByRole("button").className).toMatch("AddToCartBtn");
+    })
+    it("renders the quantity input", ()=> {
+        const { getByRole } = render(<ShopItem></ShopItem>);
+        expect(getByRole("input").className).toMatch("QuantityInput");
     })
 })
