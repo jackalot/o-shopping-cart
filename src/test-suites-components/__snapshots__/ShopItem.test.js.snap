@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShopItem component has a item name of Taco and a price of 10.00 1`] = `
+<div>
+  <div
+    class="ShopItem-Container"
+  >
+    <div
+      class="ShopItem-ItemName"
+    />
+    <div
+      class="ShopItem-Price"
+    >
+      Price: 
+    </div>
+    <label
+      for="undefinedquantity"
+    >
+      Quantity
+    </label>
+    <input
+      class="QuantityInput"
+      name="undefinedquantity"
+      type="number"
+    />
+    <button
+      class="AddToCartBtn"
+    >
+      Add To Cart!
+    </button>
+  </div>
+</div>
+`;
