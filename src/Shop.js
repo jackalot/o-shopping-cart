@@ -23,7 +23,7 @@ function Shop () {
         <h1> Welcome to the shop!</h1>
         <CartNotification amount={1}></CartNotification>
         <Cart></Cart>
-        <ShopItem itemName="Taco" itemPrice="10.00"></ShopItem>
+        <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
     </div>
     );
 }
