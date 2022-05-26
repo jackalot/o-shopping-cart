@@ -8,6 +8,9 @@ function Shop () {
         price: 10.00,
         quantity: 10,
     }])
+    function storeThisItem(item) {
+        
+    }
     return (
     <div> 
         <h1> Welcome to the shop!</h1>
