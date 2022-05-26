@@ -8,8 +8,8 @@ function Shop () {
         price: 10.00,
         quantity: 10,
     }])
-    function storeThisItem(item) {
-        
+    function storeThisItem(itemName, itemPrice, itemQuantity) {
+
     }
     return (
     <div> 
