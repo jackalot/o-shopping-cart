@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import CartNotification from "./components/CartNotification";
 import ShopItem from "./components/ShopItem";
 import Cart from "./components/Cart";
 function Shop () {
+    const [storedItems, setStoredItems] = useState([{
+        name: "name",
+        price: 10.00,
+        quantity: 10,
+    }])
     return (
     <div> 
         <h1> Welcome to the shop!</h1>
