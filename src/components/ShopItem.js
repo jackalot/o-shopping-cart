@@ -3,7 +3,7 @@ import '../css-component-files/ShopItem.css'
 function ShopItem (props) {
     const [quantity, setQuantity] = useState(0);
     function changeQuantity(newQuantity) {
-        setQuantity(newQuantity);
+        setQuantity(newQuantity.target.value);
     }
     return <div className="ShopItem-Container">
         <div className="ShopItem-ItemName">
