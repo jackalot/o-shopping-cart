@@ -4,6 +4,7 @@ import ShopItem from "./components/ShopItem";
 import Cart from "./components/Cart";
 function Shop () {
     const [storedItems, setStoredItems] = useState([])
+    const [openedCart, setOpenedCart] = useState(false);
     function storeThisItem(itemName, itemPrice, itemQuantity) {
         setStoredItems([
             ...storedItems,
