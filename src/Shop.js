@@ -15,6 +15,9 @@ function Shop () {
             }
         ])
     }
+    function handleOpenedCart () {
+        
+    }
     if(openedCart === false)
     {
         /** We haven't opened the cart yet, don't render the Cart component */
