@@ -31,6 +31,7 @@ function Shop () {
             <div>
             <h1> Welcome to the shop!</h1>
             <Cart></Cart>
+            <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
             </div>
         );
     }
