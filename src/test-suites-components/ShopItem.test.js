@@ -9,4 +9,8 @@ describe("ShopItem component", () => {
         const { getByRole } = render(<ShopItem></ShopItem>);
         expect(getByRole("button").className).toMatch("AddToCartBtn");
     })
+    it("has a item name of Taco and a price of 10.00", ()=> {
+        const { container } = render(<ShopItem></ShopItem>)
+        expect(container).toMatchSnapshot();
+    })
 })
