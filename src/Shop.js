@@ -9,7 +9,14 @@ function Shop () {
         quantity: 10,
     }])
     function storeThisItem(itemName, itemPrice, itemQuantity) {
-
+        setStoredItems([
+            ...storedItems,
+            {
+                name: itemName,
+                price: itemPrice,
+                quantity: itemQuantity,
+            }
+        ])
     }
     return (
     <div> 
