@@ -16,7 +16,14 @@ function Shop () {
         ])
     }
     function handleOpenedCart () {
-        
+        if(openedCart === false)
+        {
+            setOpenedCart(true);
+        }
+        else
+        {
+            setOpenedCart(false);
+        }
     }
     if(openedCart === false)
     {
