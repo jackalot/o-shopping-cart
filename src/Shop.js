@@ -31,7 +31,7 @@ function Shop () {
         return (
         <div> 
             <h1> Welcome to the shop!</h1>
-            <CartNotification amount={storedItems.length}></CartNotification>
+            <CartNotification handler={handleOpenedCart} amount={storedItems.length}></CartNotification>
             <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
         </div>
         );
