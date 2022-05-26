@@ -15,13 +15,25 @@ function Shop () {
             }
         ])
     }
-    return (
-    <div> 
-        <h1> Welcome to the shop!</h1>
-        <CartNotification amount={storedItems.length}></CartNotification>
-        <Cart></Cart>
-        <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
-    </div>
-    );
+    if(openedCart === false)
+    {
+        /** We haven't opened the cart yet, don't render the Cart component */
+        return (
+        <div> 
+            <h1> Welcome to the shop!</h1>
+            <CartNotification amount={storedItems.length}></CartNotification>
+            <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
+        </div>
+        );
+    } 
+    else {
+        return (
+            <div>
+            <h1> Welcome to the shop!</h1>
+            <Cart></Cart>
+            </div>
+        );
+    }
+
 }
 export default Shop;
