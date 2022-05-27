@@ -16,6 +16,6 @@ describe("ShopItem component", () => {
     it("ShopItem loads with initial state of 0", () => {
         const { container } = render(<ShopItem itemName="Taco" itemPrice="10.00" />);
         const quantity = getByLabelText(container, "Quantity");
-        expect(quantity.textContent).toBe("0");
+        expect(quantity.textContent).toBe(0);
     });
 })
