@@ -14,8 +14,8 @@ describe("ShopItem component", () => {
         expect(container).toMatchSnapshot();
     })
     it("ShopItem loads with initial state of 0", () => {
-        const { container } = render(<ShopItem />);
-        const quantity = getByDisplayValue(container, "input");
+        const { container } = render(<ShopItem itemName="Taco" itemPrice="10.00" />);
+        const quantity = getByLabelText(container, "Quantity");
         expect(quantity.textContent).toBe("0");
     });
 })
