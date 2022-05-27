@@ -1,1 +1,1 @@
-focus: allow the shopping cart to display whats in our cart
+focus: write tests for each component
