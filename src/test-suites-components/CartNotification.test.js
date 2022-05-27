@@ -6,10 +6,13 @@ import ShopItem from "../components/ShopItem";
 import CartNotification from "../components/CartNotification";
 
 describe("CartNotification Component", () => {
-    it("creates a snapshot for the whole element", () => {
+    it("creates a snapshot for the whole component", () => {
         const { container } = render(<CartNotification
              amount = {3}
              ></CartNotification>)
         expect(container).toMatchSnapshot();
+    })
+    it("The 'Cart' Text Displays the number 4", () => {
+        
     })
 })
