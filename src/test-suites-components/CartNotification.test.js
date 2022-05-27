@@ -6,5 +6,7 @@ import ShopItem from "../components/ShopItem";
 import CartNotification from "../components/CartNotification";
 
 describe("CartNotification Component", () => {
-    
+    it("displays the entire element", () => {
+        
+    })
 })
