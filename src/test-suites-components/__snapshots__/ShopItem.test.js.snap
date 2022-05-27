@@ -20,6 +20,7 @@ exports[`ShopItem component has a item name of Taco and a price of 10.00 1`] = `
     </label>
     <input
       class="QuantityInput"
+      id="undefinedquantity"
       name="undefinedquantity"
       type="number"
     />
