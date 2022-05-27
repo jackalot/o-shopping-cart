@@ -13,6 +13,11 @@ describe("ShopItem component", () => {
         const { container } = render(<ShopItem></ShopItem>)
         expect(container).toMatchSnapshot();
     })
+    it("ShopItem has a quantity field", () => {
+        const { container } = render(<ShopItem itemName="Taco" itemPrice="10.00" />);
+        const quantity = getByLabelText(container, "Quantity");
+        expect(quantity.textContent).toBe('');
+    })
     it("ShopItem loads with initial state of 0", () => {
         const { container } = render(<ShopItem itemName="Taco" itemPrice="10.00" />);
         const quantity = getByLabelText(container, "Quantity");
