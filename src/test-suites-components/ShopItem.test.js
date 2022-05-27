@@ -1,7 +1,7 @@
 import React from "react";
 import "@testing-library/jest-dom"
 import userEvent from "@testing-library/user-event"; 
-import { getByLabelText, render } from "@testing-library/react";
+import { getByDisplayValue, getByLabelText, getByRole, render } from "@testing-library/react";
 import ShopItem from "../components/ShopItem";
 
 describe("ShopItem component", () => {
@@ -13,7 +13,9 @@ describe("ShopItem component", () => {
         const { container } = render(<ShopItem></ShopItem>)
         expect(container).toMatchSnapshot();
     })
-    it("has the correct state for quantity", ()=> {
-       
-    })
+    it("ShopItem loads with initial state of 0", () => {
+        const { container } = render(<ShopItem />);
+        const quantity = getByDisplayValue(container, "input");
+        expect(quantity.textContent).toBe("0");
+    });
 })
