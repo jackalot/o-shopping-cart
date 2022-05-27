@@ -1,1 +1,1 @@
-focus: allow the shopItem to be added to state, test shopItem
+focus: allow the shopping cart to display whats in our cart
