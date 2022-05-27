@@ -12,8 +12,8 @@ function ShopItem (props) {
         <div className="ShopItem-Price">
         Price: {props.itemPrice}
         </div>
-        <label for={props.itemName + "quantity"}>Quantity</label>
-        <input onChange={changeQuantity} className="QuantityInput" name={props.itemName + "quantity"} type="number"></input>
+        <label htmlFor={props.itemName + "quantity"}>Quantity</label>
+        <input onChange={changeQuantity} className="QuantityInput"  id={props.itemName + "quantity"} name={props.itemName + "quantity"} type="number"></input>
         <button className="AddToCartBtn" onClick={()=> props.handler(props.itemName, props.itemPrice, quantity)}>Add To Cart!</button>
     </div>
 }
