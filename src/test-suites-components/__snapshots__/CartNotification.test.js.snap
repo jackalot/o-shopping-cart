@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartNotification Component displays the entire element 1`] = `
+<div>
+  <div
+    class="CartNotification-Container"
+  >
+    <div
+      class="CartNotification-Amount"
+    >
+      Cart: 
+      3
+    </div>
+  </div>
+</div>
+`;
