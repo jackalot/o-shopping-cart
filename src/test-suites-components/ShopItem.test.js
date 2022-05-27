@@ -13,4 +13,7 @@ describe("ShopItem component", () => {
         const { container } = render(<ShopItem></ShopItem>)
         expect(container).toMatchSnapshot();
     })
+    it("has the correct state for quantity", ()=> {
+       
+    })
 })
