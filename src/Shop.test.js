@@ -9,4 +9,7 @@ describe("Shop Component", () => {
         const { getByRole } = render(<Shop></Shop>);
         expect(getByRole("heading").textContent).toMatch("Welcome to the shop!");
     })
+    it("Cart Notification calls handleOpenCart when clicked", () => {
+
+    })
 })
