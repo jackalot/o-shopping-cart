@@ -17,6 +17,6 @@ describe("CartNotification Component", () => {
             amount = {4}
             ></CartNotification>)
         const result = getByText(container, "Cart: 4")
-        expect(result).toBe("Cart: 4");
+        expect(result.textContent).toBe("Cart: 4");
     })
 })
