@@ -14,5 +14,7 @@ describe("Shop Component", () => {
         function handleOpenCart(){
             cartOpened = true;
         }
+        const { container } = render(<Shop></Shop>)
+        const { CartNotifContainer } = render(<CartNotification></CartNotification>)
     })
 })
