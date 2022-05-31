@@ -10,8 +10,9 @@ describe("Shop Component", () => {
         expect(getByRole("heading").textContent).toMatch("Welcome to the shop!");
     })
     it("Cart Notification calls handleOpenCart when clicked", () => {
+        let cartOpened = false;
         function handleOpenCart(){
-            
+            cartOpened = true;
         }
     })
 })
