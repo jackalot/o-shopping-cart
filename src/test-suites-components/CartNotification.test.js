@@ -31,6 +31,6 @@ describe("CartNotification Component", () => {
         function handleOpenCart(){
             cartOpened = true;
         }
-        const { Container } = render(<CartNotification></CartNotification>)
+        const { Container } = render(<CartNotification handler={handleOpenCart} amount={2}></CartNotification>)
     })
 })
