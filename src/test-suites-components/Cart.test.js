@@ -6,5 +6,5 @@ import ShopItem from "../components/ShopItem";
 import CartNotification from "../components/CartNotification";
 
 describe("Cart component", () => {
-    
+    it("The Cart component has a 'Checkout' button")
 })
