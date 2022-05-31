@@ -5,5 +5,7 @@ import { getByDisplayValue, getByLabelText, getByRole, render } from "@testing-l
 import Shop from "./Shop";
 
 describe("Shop Component", () => {
-    
+    it("'Welcome to the Shop!' is rendered regardless of what state Shop is in", ()=> {
+        
+    })
 })
