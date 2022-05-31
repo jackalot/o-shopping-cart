@@ -32,8 +32,10 @@ describe("CartNotification Component", () => {
             cartOpened = true;
         }
         const { container } = render(<CartNotification handler={handleOpenCart} amount={2}></CartNotification>)
-        const containerDiv = getByTestId(container, 'CartNotification-Container');
-        fireEvent.click(containerDiv);
+        /** The first child node is our CartNotification-Container, by firing the event this way,
+         * we can call the handler for the test.
+         */
+        fireEvent.click(container.childNodes[0]);
         expect(cartOpened).toBe(true);
     })
 })
