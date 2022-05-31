@@ -26,4 +26,11 @@ describe("CartNotification Component", () => {
         const result = getByText(container, "Cart: 25")
         expect(result.textContent).toBe("Cart: 25");
     })
+    it("Cart Notification calls handleOpenCart when clicked", () => {
+        let cartOpened = false;
+        function handleOpenCart(){
+            cartOpened = true;
+        }
+        const { Container } = render(<CartNotification></CartNotification>)
+    })
 })
