@@ -5,7 +5,8 @@ import { getByDisplayValue, getByLabelText, getByRole, render } from "@testing-l
 import Shop from "./Shop";
 
 describe("Shop Component", () => {
-    it("'Welcome to the Shop!' is rendered regardless of what state Shop is in", ()=> {
-        
+    it("'Welcome to the shop!' is rendered regardless of what state Shop is in", ()=> {
+        const { getByRole } = render(<Shop></Shop>);
+        expect(getByRole("heading").textContent).toMatch("Welcome to the shop!");
     })
 })
