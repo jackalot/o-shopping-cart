@@ -1,7 +1,7 @@
 import React from "react";
 import "@testing-library/jest-dom"
 import userEvent from "@testing-library/user-event"; 
-import { getByDisplayValue, getByLabelText, getByRole, getByText, render } from "@testing-library/react";
+import { fireEvent, getByDisplayValue, getByLabelText, getByRole, getByTestId, getByText, render } from "@testing-library/react";
 import ShopItem from "../components/ShopItem";
 import CartNotification from "../components/CartNotification";
 
@@ -32,5 +32,8 @@ describe("CartNotification Component", () => {
             cartOpened = true;
         }
         const { container } = render(<CartNotification handler={handleOpenCart} amount={2}></CartNotification>)
+        const containerDiv = getByTestId(container, 'CartNotification-Container');
+        fireEvent.click(containerDiv);
+        expect(cartOpened).toBe(true);
     })
 })
