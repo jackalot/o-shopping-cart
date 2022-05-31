@@ -19,4 +19,11 @@ describe("CartNotification Component", () => {
         const result = getByText(container, "Cart: 4")
         expect(result.textContent).toBe("Cart: 4");
     })
+    it("The 'Cart' Text Displays the number 25", () => {
+        const { container }  = render(<CartNotification
+            amount = {25}
+            ></CartNotification>)
+        const result = getByText(container, "Cart: 25")
+        expect(result.textContent).toBe("Cart: 25");
+    })
 })
