@@ -1,7 +1,8 @@
 import React from "react";
 import "../css-component-files/Cart.css"
 function Cart (props) {
-    
+    if(props.ourItems)
+    {
     return <div className="Cart-container">
         <ul>
             {props.ourItems.map((item, i) =>
@@ -13,5 +14,15 @@ function Cart (props) {
         </div>
         <button className="Checkout">Checkout</button>
     </div>
+    }
+    else
+    {
+        return <div className="Cart-container">
+        <div className="Cart-TotalPriceDiv">        
+            <p className="Cart-Cart-TotalPrice">TOTAL PRICE: $0</p>
+        </div>
+        <button className="Checkout">Checkout</button>
+    </div>
+    }
 }
 export default Cart
