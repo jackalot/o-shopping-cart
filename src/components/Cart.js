@@ -1,7 +1,7 @@
 import React from "react";
 import "../css-component-files/Cart.css"
 function Cart (props) {
-    if(props.ourItems)
+    if(props.ourItems.length)
     {
     return <div className="Cart-container">
         <ul>
