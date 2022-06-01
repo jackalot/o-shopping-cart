@@ -35,7 +35,7 @@ function Cart (props) {
         <div className="Cart-TotalPriceDiv">        
             <p className="Cart-Cart-TotalPrice">TOTAL PRICE: $0</p>
         </div>
-        <button className="Close">Close Cart</button>
+        <button onClick={props.closeHandler} className="Close">Close Cart</button>
         <button className="Checkout">Checkout</button>
     </div>
     }
