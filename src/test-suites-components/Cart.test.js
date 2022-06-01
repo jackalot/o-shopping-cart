@@ -39,5 +39,8 @@ describe("Cart component", () => {
          * Burritos: $6.00
          * Total Price: $106.00
          */
+        const { container } = render(<Cart
+            ourItems = {mockStoredItems}>
+        </Cart>)
     })
 })
