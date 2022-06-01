@@ -74,7 +74,7 @@ describe("Cart component", () => {
         /** Item Total Prices:
          * Tacos: $50.00
          * Nachos: $50.00
-         * Burritos: $6.00
+         * Burrito: $6.00
          * Total Price: $106.00
          */
         const { getByText } = render(<Cart
@@ -84,5 +84,7 @@ describe("Cart component", () => {
          expect(TacoTest.textContent).toContain("Taco, Price Per: $10, Quantity Selected: 5 Total: $50");
          const NachoTest = getByText("Nachos, Price Per: $5, Quantity Selected: 10 Total: $50")
          expect(NachoTest.textContent).toContain("Nachos, Price Per: $5, Quantity Selected: 10 Total: $50");
+         const BurritosTest = getByText("Burrito, Price Per: $3, Quantity Selected: 2 Total: $6")
+         expect(BurritosTest.textContent).toContain("Burrito, Price Per: $3, Quantity Selected: 2 Total: $6");
     })
 })
