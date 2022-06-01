@@ -15,5 +15,7 @@ describe("Cart component", () => {
         const result = getByText(/TOTAL PRICE/i)
         expect(result.textContent).toContain("TOTAL PRICE:");
     })
-    it("The Cart component displays all of the needed list elements with their prices")
+    it("The Cart component displays all of the needed list elements with their prices", () => {
+        const mockStoredItems = []
+    })
 })
