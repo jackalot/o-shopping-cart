@@ -1,6 +1,15 @@
 import React from "react";
 import "../css-component-files/Cart.css"
 function Cart (props) {
+    function addAllTotals ()
+    {
+        let sum = 0;
+        props.ourItems.map((item) => {
+           let itemTotal = item.itemQuantity * item.itemPricePer;
+           sum += itemTotal;
+        })
+        return sum;
+    }
     if(props.ourItems.length)
     {
     return <div className="Cart-container">
@@ -10,7 +19,8 @@ function Cart (props) {
             )}
         </ul>
         <div className="Cart-TotalPriceDiv">        
-            <p className="Cart-Cart-TotalPrice">TOTAL PRICE: $106.00</p>
+            <p className="Cart-Cart-TotalPrice">TOTAL PRICE: ${
+           addAllTotals()}</p>
         </div>
         <button className="Checkout">Checkout</button>
     </div>
