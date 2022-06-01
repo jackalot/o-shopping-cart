@@ -18,6 +18,9 @@ function Cart (props) {
     else
     {
         return <div className="Cart-container">
+            <ul>
+                <li>Your cart is currently empty, please add something from below.</li>
+            </ul>
         <div className="Cart-TotalPriceDiv">        
             <p className="Cart-Cart-TotalPrice">TOTAL PRICE: $0</p>
         </div>
