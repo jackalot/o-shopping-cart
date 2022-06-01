@@ -40,7 +40,7 @@ function Shop () {
         return (
             <div>
             <h1> Welcome to the shop!</h1>
-            <Cart ourItems={storedItems}></Cart>
+            <Cart closeHandler={handleOpenedCart} ourItems={storedItems}></Cart>
             <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
             </div>
         );
