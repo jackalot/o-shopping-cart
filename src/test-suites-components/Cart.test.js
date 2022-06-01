@@ -7,7 +7,7 @@ import CartNotification from "../components/CartNotification";
 import Cart from "../components/Cart";
 describe("Cart component", () => {
     it("The Cart component has a 'Checkout' button", () => {
-         //** Not needed for the test, just here so the elements can render */
+         //** Not the purpose of the test, just here so the elements can render */
          const mockStoredItems = [
             {
                 itemName: "Taco",
@@ -30,7 +30,7 @@ describe("Cart component", () => {
         expect(getByRole("button").textContent).toMatch("Checkout");
     })
     it("The cart component has a total price element", () => {
-        //** Not needed for the test, just here so the elements can render */
+        //** Not the purpose of the test, just here so the elements can render */
         const mockStoredItems = [
             {
                 itemName: "Taco",
