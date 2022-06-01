@@ -88,6 +88,27 @@ describe("Cart component", () => {
          expect(BurritosTest.textContent).toContain("Burrito, Price Per: $3, Quantity Selected: 2 Total: $6");
     })
     it("The Total Price renders and is $106", () => {
-
+        const mockStoredItems = [
+            {
+                itemName: "Taco",
+                itemPricePer: 10.00,
+                itemQuantity: 5,
+            },
+            {
+                itemName: "Nachos",
+                itemPricePer: 5.00,
+                itemQuantity: 10,
+            },
+            {
+                itemName: "Burrito",
+                itemPricePer: 3.00,
+                itemQuantity: 2,
+            },
+        ]
+        const { getByText } = render(<Cart
+            ourItems = {mockStoredItems}>
+        </Cart>)
+         const TotalPrice = getByText("TOTAL PRICE: $106.00")
+         expect(TotalPrice.textContent).toContain("TOTAL PRICE: $106.00");
     })
 })
