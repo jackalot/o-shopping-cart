@@ -4,9 +4,9 @@ function Cart (props) {
     
     return <div className="Cart-container">
         <ul>
-            <li className="Cart-cartItem">Taco, Price Per: 10.00, Quantity Selected: 5 Total: $50.00</li>
-            <li className="Cart-cartItem">Nachos, Price Per: 5.00, Quantity Selected: 10 Total: $50.00</li>
-            <li className="Cart-cartItem">Burrito, Price Per: 3.00, Quantity Selected: 2 Total: $6.00</li>
+            {props.ourItems.map((item, i) =>
+                <li key={i}>{item.itemName}, Item Price: ${item.price}, Quantity Selected: {item.quantity}, Total: ${item.price * item.quantity} </li>
+            )}
         </ul>
         <div className="Cart-TotalPriceDiv">        
             <p className="Cart-Cart-TotalPrice">TOTAL PRICE: $106.00</p>
