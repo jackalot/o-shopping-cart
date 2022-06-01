@@ -39,8 +39,10 @@ describe("Cart component", () => {
          * Burritos: $6.00
          * Total Price: $106.00
          */
-        const { container } = render(<Cart
+        const { getByText } = render(<Cart
             ourItems = {mockStoredItems}>
         </Cart>)
+         const result = getByText(/Taco, Price Per: 10.00, Quantity Selected: 5 Total: 50.00/i)
+         expect(result.textContent).toContain("Taco, Price Per: 10.00, Quantity Selected: 5 Total: 50.00");
     })
 })
