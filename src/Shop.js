@@ -9,9 +9,9 @@ function Shop () {
         setStoredItems([
             ...storedItems,
             {
-                name: itemName,
-                price: itemPrice,
-                quantity: itemQuantity,
+                itemName: itemName,
+                itemPricePer: itemPrice,
+                itemQuantity: itemQuantity,
             }
         ])
     }
