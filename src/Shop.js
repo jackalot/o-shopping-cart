@@ -5,13 +5,13 @@ import Cart from "./components/Cart";
 function Shop () {
     const [storedItems, setStoredItems] = useState([])
     const [openedCart, setOpenedCart] = useState(false);
-    function storeThisItem(itemName, itemPrice, itemQuantity) {
+    function storeThisItem(name, price, quantity) {
         setStoredItems([
             ...storedItems,
             {
-                itemName: itemName,
-                itemPricePer: itemPrice,
-                itemQuantity: itemQuantity,
+                itemName: name,
+                itemPricePer: price,
+                itemQuantity: quantity,
             }
         ])
     }
