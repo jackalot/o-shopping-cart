@@ -7,11 +7,49 @@ import CartNotification from "../components/CartNotification";
 import Cart from "../components/Cart";
 describe("Cart component", () => {
     it("The Cart component has a 'Checkout' button", () => {
-        const { getByRole } = render(<Cart></Cart>)
+         //** Not needed for the test, just here so the elements can render */
+         const mockStoredItems = [
+            {
+                itemName: "Taco",
+                itemPricePer: 10.00,
+                itemQuantity: 5,
+            },
+            {
+                itemName: "Nachos",
+                itemPricePer: 5.00,
+                itemQuantity: 10,
+            },
+            {
+                itemName: "Burrito",
+                itemPricePer: 3.00,
+                itemQuantity: 2,
+            },
+        ]
+        const { getByRole } = render(<Cart
+        ourItems = {mockStoredItems}></Cart>)
         expect(getByRole("button").textContent).toMatch("Checkout");
     })
     it("The cart component has a total price element", () => {
-        const { getByText } = render(<Cart></Cart>)
+        //** Not needed for the test, just here so the elements can render */
+        const mockStoredItems = [
+            {
+                itemName: "Taco",
+                itemPricePer: 10.00,
+                itemQuantity: 5,
+            },
+            {
+                itemName: "Nachos",
+                itemPricePer: 5.00,
+                itemQuantity: 10,
+            },
+            {
+                itemName: "Burrito",
+                itemPricePer: 3.00,
+                itemQuantity: 2,
+            },
+        ]
+        const { getByText } = render(<Cart
+        ourItems = {mockStoredItems}></Cart>)
         const result = getByText(/TOTAL PRICE/i)
         expect(result.textContent).toContain("TOTAL PRICE:");
     })
