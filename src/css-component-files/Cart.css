@@ -13,7 +13,7 @@
     border-style: solid;
     width: fit-content;
 }
-.Cart-TotalPrice {
+.Cart-TotalPriceDiv {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
