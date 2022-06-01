@@ -5,7 +5,7 @@ function Cart (props) {
     return <div className="Cart-container">
         <ul>
             {props.ourItems.map((item, i) =>
-                <li key={i}>{item.itemName}, Price Per: ${item.itemPricePer}, Quantity Selected: {item.itemQuantity}, Total: ${item.itemPricePer * item.itemQuantity}</li>
+                <li key={i}>{item.itemName}, Price Per: ${item.itemPricePer}, Quantity Selected: {item.itemQuantity} Total: ${item.itemPricePer * item.itemQuantity}</li>
             )}
         </ul>
         <div className="Cart-TotalPriceDiv">        
