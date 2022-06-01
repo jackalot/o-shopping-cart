@@ -33,5 +33,11 @@ describe("Cart component", () => {
                 itemQuantity: 2,
             },
         ]
+        /** Item Total Prices:
+         * Tacos: $50.00
+         * Nachos: $50.00
+         * Burritos: $6.00
+         * Total Price: $106.00
+         */
     })
 })
