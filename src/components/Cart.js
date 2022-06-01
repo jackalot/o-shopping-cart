@@ -22,6 +22,7 @@ function Cart (props) {
             <p className="Cart-Cart-TotalPrice">TOTAL PRICE: ${
            addAllTotals()}</p>
         </div>
+        <button className="Close">Close Cart</button>
         <button className="Checkout">Checkout</button>
     </div>
     }
@@ -34,6 +35,7 @@ function Cart (props) {
         <div className="Cart-TotalPriceDiv">        
             <p className="Cart-Cart-TotalPrice">TOTAL PRICE: $0</p>
         </div>
+        <button className="Close">Close Cart</button>
         <button className="Checkout">Checkout</button>
     </div>
     }
