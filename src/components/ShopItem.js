@@ -13,7 +13,7 @@ function ShopItem (props) {
         Price: {props.itemPrice}
         </div>
         <label htmlFor={props.itemName + "quantity"}>Quantity</label>
-        <input onChange={changeQuantity} className="QuantityInput"  id={props.itemName + "quantity"} name={props.itemName + "quantity"} type="number"></input>
+        <input min={0} onChange={changeQuantity} className="QuantityInput"  id={props.itemName + "quantity"} name={props.itemName + "quantity"} type="number"></input>
         <button className="AddToCartBtn" onClick={()=> props.handler(props.itemName, props.itemPrice, quantity)}>Add To Cart!</button>
     </div>
 }
