@@ -16,6 +16,22 @@ describe("Cart component", () => {
         expect(result.textContent).toContain("TOTAL PRICE:");
     })
     it("The Cart component displays all of the needed list elements with their prices", () => {
-        const mockStoredItems = []
+        const mockStoredItems = [
+            {
+                itemName: "Taco",
+                itemPricePer: 10.00,
+                itemQuantity: 5,
+            },
+            {
+                itemName: "Nachos",
+                itemPricePer: 5.00,
+                itemQuantity: 10,
+            },
+            {
+                itemName: "Burrito",
+                itemPricePer: 3.00,
+                itemQuantity: 2,
+            },
+        ]
     })
 })
