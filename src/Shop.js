@@ -33,6 +33,8 @@ function Shop () {
             <h1> Welcome to the shop!</h1>
             <CartNotification handler={handleOpenedCart} amount={storedItems.length}></CartNotification>
             <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
+            <ShopItem handler={storeThisItem} itemName="Nachos" itemPrice="5.00"></ShopItem>
+            <ShopItem handler={storeThisItem} itemName="Burrito" itemPrice="3.00"></ShopItem>
         </div>
         );
     } 
@@ -42,6 +44,8 @@ function Shop () {
             <h1> Welcome to the shop!</h1>
             <Cart closeHandler={handleOpenedCart} ourItems={storedItems}></Cart>
             <ShopItem handler={storeThisItem} itemName="Taco" itemPrice="10.00"></ShopItem>
+            <ShopItem handler={storeThisItem} itemName="Nachos" itemPrice="5.00"></ShopItem>
+            <ShopItem handler={storeThisItem} itemName="Burrito" itemPrice="3.00"></ShopItem>
             </div>
         );
     }
