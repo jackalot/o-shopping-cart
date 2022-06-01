@@ -10,6 +10,8 @@ describe("Cart component", () => {
         const { getByRole } = render(<Cart></Cart>)
         expect(getByRole("button").textContent).toMatch("Checkout");
     })
-    it("The cart component has a total price element")
+    it("The cart component has a total price element", () => {
+        
+    })
     /**it("The Cart component displays all of the needed list elements with their prices")*/
 })
