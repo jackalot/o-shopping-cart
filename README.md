@@ -1,4 +1,19 @@
-This will be a React app with a home page, a shop page, and shop items. It will also be tested with Jest.
+This is a React app that uses the Router library and the Jest/Jest-Dom libraries to create a Home and Shop page with a Shopping page.
+
+Heres what we used in this project:
+
+
+ testing-library/jest-dom,
+ testing-library/react,
+ testing-library/user-event,
+ eslint,
+ gh-pages,
+ react,
+ react-dom,
+ react-router-dom,
+ react-scripts,
+ web-vitals
+ 
 Heres our color pallete: 
 Orange
 #FD7F20
